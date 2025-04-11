@@ -45,8 +45,8 @@ const Navbar = () => {
 
   return (
     <div className="mt-4">
-      <div className="max-w-3xl mx-auto px-4">
-        <div className="flex flex-wrap justify-between items-center p-4 border-2 rounded-lg bg-white dark:bg-gray-900 shadow-md">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex flex-wrap justify-between items-center p-4">
           <Link
             href="/"
             className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white transition-all duration-300 ease-in-out"
@@ -55,7 +55,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex flex-wrap space-x-4 text-sm md:text-lg text-gray-900 dark:text-white">
+          <div className="hidden md:flex flex-wrap ml-4 space-x-20 text-sm md:text-lg text-gray-900 dark:text-white">
             <Link href="/build" className="hover:text-blue-400">
               Build
             </Link>
@@ -78,12 +78,12 @@ const Navbar = () => {
             >
               <FaSearch size={18} />
             </Link>
-            <button
+            {/* <button
               onClick={toggleDarkMode}
               className="p-2 border-2 rounded-lg hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out"
             >
               {darkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
-            </button>
+            </button> */}
             <Link
               href="/cart"
               className="p-2 border-2 rounded-lg hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out"
